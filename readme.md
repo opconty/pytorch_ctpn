@@ -17,7 +17,7 @@ Training log is available:[Training Log](./logs/training_logs.pdf)(Chinese)
 - run `python ctpn_train.py --image-dir image_dir --labels-dir labels_dir --num-workers num_workers`
 
 ### predict
-- download the pretrained weights from [dropbox](https://www.dropbox.com/s/r1zjw167a5lsk4l/ctpn_ep18_0.0074_0.0121_0.0195%28w-lstm%29.pth.tar?dl=0)
+- ~~download the pretrained weights from [dropbox](https://www.dropbox.com/s/r1zjw167a5lsk4l/ctpn_ep18_0.0074_0.0121_0.0195%28w-lstm%29.pth.tar?dl=0)~~
 - Please refer to [predict.py](./ctpn_predict.py) for more details.
 
 ### results
@@ -25,6 +25,11 @@ Training log is available:[Training Log](./logs/training_logs.pdf)(Chinese)
 
 ### Android DEMO
 These days, I'm working on deploying this model on Android devices.you can check the results from [here](./logs/ANDROID_OCR.pdf).
+
+**Android text recognition 4-23**
+> Find out that adopting [skew transform](./results/ANDROID_DETECTION_SKEW.GIF) can significantly improve recognition accuracy.(It may take a few seconds, heavily depends on your harware and input image size)
+
+![reco](./results/ANDROID_RECO_DEMO.GIF)
 
 ### reference
 - [CTPN (Detecting Text in Natural Image with Connectionist Text Proposal Network)](https://arxiv.org/pdf/1609.03605.pdf)
